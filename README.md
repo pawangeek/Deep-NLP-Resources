@@ -5,6 +5,7 @@ Table of Contents
 ----
   - [Table of Contents](#table-of-contents)
   - [Libraries](#libraries)
+  - [Essesntial Mathematics](#maths)
   - [Dictionary](#dictionary)
   - [Lexicon](#lexicon)
   - [Parsing](#parsing)
@@ -23,6 +24,7 @@ Table of Contents
   - [Contribute](#contribute)
 
 <span id='libraries'>Useful Libraries</span>
+----
   - [NumPy](http://cs231n.github.io/python-numpy-tutorial/) Stanford's lecture CS231N deals with NumPy, which is fundamental in machine learning calculations.
   - [NLTK](https://github.com/nltk/nltk) It's a suite of libraries and programs for symbolic and statistical natural language processing 
   - [Tensorflow](https://www.tensorflow.org/tutorials/text/word_embeddings) A tutorial provided by Tensorflow. It gives great explanations on the basics with visual aids. Useful in Deep NLP
@@ -34,11 +36,24 @@ Table of Contents
   - [spaCy](https://course.spacy.io/) A tutorial written by Ines, the core developer of the noteworthy spaCy.
   - [torchtext](https://mlexplained.com/2018/02/08/a-comprehensive-tutorial-to-torchtext/) A tutorial on torchtext, a package that makes data preprocessing handy. Has more details than the official documentation.
   - [SentencePiece](https://github.com/google/sentencepiece) Google's open source library that builds BPE-based vocabulary using subword information.
-  - [Gensim](https://github.com/RaRe-Technologies/gensim) Gensim is a Python library for topic modelling, document indexing and similarity retrieval with large corpora.
-  - [polyglot](https://github.com/aboSamoor/polyglot) Polyglot is a natural language pipeline which supports massive multilingual applications.
-  - [Textblob](https://github.com/sloria/TextBlob/)Textblob provides simple API for diving into common natural language processing (NLP) tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, WordNet integration, parsing, word inflection
+  - [Gensim](https://github.com/RaRe-Technologies/gensim) Python library for topic modelling, document indexing and similarity retrieval with large corpora.
+  - [polyglot](https://github.com/aboSamoor/polyglot) A natural language pipeline which supports massive multilingual applications.
+  - [Textblob](https://github.com/sloria/TextBlob/) Provides simple API for diving into common natural language processing (NLP) tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, WordNet integration, parsing, word inflection
   - [Quepy](https://github.com/machinalis/quepy) A python framework to transform natural language questions to queries in a database query language.
   - [Pattern](https://github.com/clips/pattern) Web mining module for Python, with tools for scraping, natural language processing, machine learning, network analysis and visualization
+
+<span id='maths'>Essential Mathematics</span>
+----
+- Statistics and Probabilities
+  - [Statistics 110](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo) A lecture on Probability that can be easily understood by non-engineering major students.
+  - [Brandon Foltz's Statistics](https://www.youtube.com/user/BCFoltz/playlists) Brandon Foltz's Probability and Statistics lectures are posted on Youtube and is rather short, so it can be easily accessed during daily commute.
+- Linear Algebra
+  - [Linear Algebra](https://www.youtube.com/watch?v=ZK3O402wf1c&list=PLE7DDD91010BC51F8) Awesome lecture of professor Gilbert Strang.
+  - [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) Linear algebraic lecture on Youtube channel 3Blue1Brown
+- Basics
+  - [Mathematics for Machine Learning](https://mml-book.github.io/) Book on all the mathematical knowledge accompanied with machine learning.
+  - [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) Calculus lecture by the channel 3Blue1Brown mentioned above, helpful for those who want an overview of calculus likewise.
+
 
 <span id='dictionary'>Dictionary</span>
 ----
