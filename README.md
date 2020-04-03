@@ -14,7 +14,9 @@ Table of Contents
   - [Machine Translation](#machine-translation)
   - [Text Generation](#text-generation)
   - [Text Classification](#text_classification)
+  - [Text Summarization](#text_summarization)
   - [Sentiment](#sentiment)
+  - [Word/Document Embeddings](#embedding)
   - [Word Representation](#word-representation)
   - [Question Answer](#question-answer)
   - [Information Extraction](#information-extraction)
@@ -120,6 +122,14 @@ Table of Contents
   - [Google-Snippets](http://jwebpro.sourceforge.net/data-web-snippets.tar.gz) This dataset contains the web search results related to 8 different domains such as business, computers and engineering.
   - [BenchmarkingZeroShot](https://github.com/yinwenpeng/BenchmarkingZeroShot) This repository contains the code and the data for the EMNLP2019 paper "Benchmarking Zero-shot Text Classification: Datasets, Evaluation and Entailment Approach".
 
+<span id ='text_summarization'>Text Summarization</span>  
+--------
+  - [Text Summarization with Gensim](https://rare-technologies.com/text-summarization-with-gensim/) The gensim implementation is based on the popular "TextRank" algorithm
+  - [Unsupervised Text Summarization ](https://medium.com/jatana/unsupervised-text-summarization-using-sentence-embeddings-adb15ce83db1) Awesome article describing text summarization using Sentence Embeddings
+  - [Improving Abstraction in Text Summarization](http://aclweb.org/anthology/D18-1207) Proposing two techniques for improvement
+  - [Text Summarization and Categorization](https://repository.library.georgetown.edu/bitstream/handle/10822/1050759/Cohan_georgetown_0076D_13889.pdf?sequence=1) More related to scientific and health related data
+  - [Text summarization with TensorFlow](https://ai.googleblog.com/2016/08/text-summarization-with-tensorflow.html). A basic study on text summarization of 2016
+
 <span id='sentiment'>Sentiment</span>
 ---------
   - [MPQA 3.0](http://mpqa.cs.pitt.edu/corpora/mpqa_corpus/) This corpus contains news articles and other text documents manually annotated for opinions and other private states (i.e., beliefs, emotions, sentiments, speculations, etc.). The main changes in this version of the MPQA corpus are the additions of new eTarget (entity/event) annotations.
@@ -129,6 +139,32 @@ Table of Contents
   - [SemEval-2013 Twitter](https://www.cs.york.ac.uk/semeval-2013/task2/index.html) SemEval 2013 Twitter dataset, which contains phrase-level sentiment annotation. 
   - [Sentihood](https://github.com/uclmr/jack/tree/master/data/sentihood) SentiHood is a dataset for the task of targeted aspect-based sentiment analysis, which contains 5215 sentences. *SentiHood: Targeted Aspect Based Sentiment Analysis Dataset for Urban Neighbourhoods, COLING 2016*.
   - [SemEval-2014 Task 4](http://alt.qcri.org/semeval2014/task4/) This task is concerned with aspect based sentiment analysis (ABSA). Two domain-specific datasets for laptops and restaurants, consisting of over 6K sentences with fine-grained aspect-level human annotations have been provided for training.
+
+<span id='embedding'> Word/Document Embeddings</span>
+-------
+  - [The Current Best of Universal Word/Sentence Embeddings](https://medium.com/huggingface/universal-word-sentence-embeddings-ce48ddc8fc3a). It encode words and sentences in fixed-length dense vectors to drastically improve the processing of textual data.
+  - [Document Embedding with Paragraph Vectors](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44894.pdf) 2015. From Google.
+  - [GloVe Word Embeddings Demo](https://github.com/fastai/word-embeddings-workshop/blob/master/Word%20Embeddings.ipynb) Demo of how to use GloVe Word Embeddings
+  - [FastText](https://github.com/facebookresearch/fastText) A Library for learning of word embeddings and text classification created by Facebook's AI Research (FAIR) lab with many pretrained models
+  - [Text Classification With Word2Vec](http://nadbordrozd.github.io/blog/2016/05/20/text-classification-with-word2vec/) Practical implementation on how to do text classification with word2vec using GLoVe 
+  - [Document Embedding](http://sybrandt.com/post/document-embedding/) Introduction to basics and importance of document Embeddings
+  - [From Word Embeddings To Document Distances](http://proceedings.mlr.press/v37/kusnerb15.pdf) Intoduces Word Mover’s Distance (WMD) that measures the dissimilarity between two text documents as the minimum amount of distance that the embedded words of one document need to "travel" to reach the embedded words of another document.
+  - [Doc2Vec Tutorial on the Lee Dataset](https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/doc2vec-lee.ipynb)
+  - [Word Embeddings in Python with SpaCy and Gensim](https://www.shanelynn.ie/word-embeddings-in-python-with-spaCy-and-gensim/)
+  - [The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](https://jalammar.github.io/illustrated-bert/). Dec 2018.
+  - [Deep Contextualized Word Represenations](https://arxiv.org/abs/1802.05365). ElMo. [PyTorch implementation](https://github.com/allenai/allennlp/blob/master/tutorials/how_to/elmo.md). [TF Implementation](https://github.com/allenai/bilm-tf)
+  - [Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146). [Implementation code](http://nlp.fast.ai/category/classification.html). 
+  - [Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364). Shows how universal sentence representations trained using the supervised data
+  - [Learned in Translation: Contextualized Word Vectors](https://arxiv.org/abs/1708.00107). CoVe uses a deep LSTM encoder from an attentional sequence-to-sequence model trained for machine translation (MT) to contextualize word vectors
+  - [Distributed Representations of Sentences and Documents](http://cs.stanford.edu/~quocle/paragraph_vector.pdf). Paragraph vectors. See [doc2vec tutorial at gensim](http://rare-technologies.com/doc2vec-tutorial/)
+  - [sense2vec](http://arxiv.org/abs/1511.06388). A Fast and Accurate Method for Word Sense Disambiguation In Neural Word Embeddings
+  - [Skip Thought Vectors](http://arxiv.org/abs/1506.06726). An encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage
+  - [Sequence to Sequence Learning with Neural Networks](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf). It uses a multilayered LSTM to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector
+  - [The Amazing Power of Word Vectors](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/). Material related to word2vec from different five research papers
+  - [Contextual String Embeddings for Sequence Labeling](http://alanakbik.github.io/papers/coling2018.pdf). Properties include that they (a) are trained without any explicit notion of words, and (b) are contextualized by their surrounding text 
+  - [ELMo Word embeddings](allennlp.org/elmo) ELMo is a deep contextualized word representation that models both complex characteristics of word use and how these uses vary across linguistic contexts.
+  - [BERT Explained - State of the art language model for NLP](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270). A great explaination of the fundamentals of how BERT works.
+  - [Review of BERT based models](https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58). And some recent clues/insights into what makes BERT so effective
 
 <span id='wordrepresentation'>Word Representation</span>
 --------------
