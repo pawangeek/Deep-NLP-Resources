@@ -4,6 +4,7 @@ Awesome Resource for NLP
 Table of Contents
 ----
   - [Table of Contents](#table-of-contents)
+  - [Libraries](#libraries)
   - [Dictionary](#dictionary)
   - [Lexicon](#lexicon)
   - [Parsing](#parsing)
@@ -20,6 +21,24 @@ Table of Contents
   - [Commonsense](#commonsense)
   - [Other](#other)
   - [Contribute](#contribute)
+
+<span id='libraries'>Useful Libraries</span>
+  - [NumPy](http://cs231n.github.io/python-numpy-tutorial/) Stanford's lecture CS231N deals with NumPy, which is fundamental in machine learning calculations.
+  - [NLTK](https://github.com/nltk/nltk) It's a suite of libraries and programs for symbolic and statistical natural language processing 
+  - [Tensorflow](https://www.tensorflow.org/tutorials/text/word_embeddings) A tutorial provided by Tensorflow. It gives great explanations on the basics with visual aids. Useful in Deep NLP
+  - [PyTorch](https://pytorch.org/tutorials/) An awesome tutorial on Pytorch provided by Facebook with great quality.
+  - [tensor2tensor](https://github.com/tensorflow/tensor2tensor) Sequence to Sequence tool kit by Google written in Tensorflow.
+  - [fairseq](https://github.com/pytorch/fairseq) Sequence to Sequence tool kit by Facebook written in Pytorch.
+  - [Hugging Face Transformers](https://github.com/huggingface/transformers) A library based on Transformer provided by Hugging Face that allows easy access to pre-trained models. One of the key NLP libraries to not only developers but researchers as well.
+  - [Hugging Face Tokenizers](https://github.com/huggingface/tokenizers) A tokenizer library that Hugging Face maintains. It boosts fast operations as the key functions are written in Rust. The latest tokenizers such as BPE can be tried out with Hugging Face tokenizers.
+  - [spaCy](https://course.spacy.io/) A tutorial written by Ines, the core developer of the noteworthy spaCy.
+  - [torchtext](https://mlexplained.com/2018/02/08/a-comprehensive-tutorial-to-torchtext/) A tutorial on torchtext, a package that makes data preprocessing handy. Has more details than the official documentation.
+  - [SentencePiece](https://github.com/google/sentencepiece) Google's open source library that builds BPE-based vocabulary using subword information.
+  - [Gensim](https://github.com/RaRe-Technologies/gensim) Gensim is a Python library for topic modelling, document indexing and similarity retrieval with large corpora.
+  - [polyglot](https://github.com/aboSamoor/polyglot) Polyglot is a natural language pipeline which supports massive multilingual applications.
+  - [Textblob](https://github.com/sloria/TextBlob/)Textblob provides simple API for diving into common natural language processing (NLP) tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, WordNet integration, parsing, word inflection
+  - [Quepy](https://github.com/machinalis/quepy) A python framework to transform natural language questions to queries in a database query language.
+  - [Pattern](https://github.com/clips/pattern) Web mining module for Python, with tools for scraping, natural language processing, machine learning, network analysis and visualization
 
 <span id='dictionary'>Dictionary</span>
 ----
