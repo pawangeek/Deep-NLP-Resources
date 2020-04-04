@@ -1,6 +1,8 @@
 Awesome Resource for NLP
 ====
 
+## New Update : Capsule Network, Sarcasm Detection
+
 Table of Contents
 ----
   - [Table of Contents](#table-of-contents)
