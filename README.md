@@ -1,7 +1,7 @@
 Awesome Resource for NLP
 ====
 
-## New Update : Capsule Network, Sarcasm Detection
+#### New Update : Capsule Network, Sarcasm Detection
 
 Table of Contents
 ----
