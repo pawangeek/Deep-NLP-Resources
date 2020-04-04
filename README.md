@@ -11,6 +11,7 @@ Table of Contents
   - [Parsing](#parsing)
   - [Discourse](#discourse)
   - [Language Model](#language-model)
+  - [Sarcasm Detection](#sarcasm)
   - [Machine Translation](#machine-translation)
   - [Text Generation](#text-generation)
   - [Text Classification](#text_classification)
@@ -21,6 +22,7 @@ Table of Contents
   - [Question Answer](#question-answer)
   - [Information Extraction](#information-extraction)
   - [Natural Language Inference](#natural-language-inference)
+  - [Capsule Networks](#capsule)
   - [Commonsense](#commonsense)
   - [Other](#other)
   - [Contribute](#contribute)
@@ -95,6 +97,13 @@ Table of Contents
   - [Google Billion Word dataset](https://github.com/ciprian-chelba/1-billion-word-language-modeling-benchmark) 1 billion word language modeling benchmark.
   - [WikiText](https://einstein.ai/research/the-wikitext-long-term-dependency-language-modeling-dataset) The WikiText language modeling dataset is a collection of over 100 million tokens extracted from the set of verified Good and Featured articles on Wikipedia. Compared to the preprocessed version of Penn Treebank (PTB), WikiText-2 is over 2 times larger and WikiText-103 is over 110 times larger. 
 
+<span id='sarcasm'>Sarcasm Detection</span>
+-----
+  - [CASCADE](http://aclweb.org/anthology/C18-1156) ContextuAl SarCasm DEtector (CASCADE) adopts a hybrid approach of both content- and context-driven modeling for sarcasm detection in online social media discussions. Further they used content-based feature extractors such as convolutional neural networks
+  - [A Deeper Look into Sarcastic Tweets Using Deep Convolutional Neural Networks](https://pdfs.semanticscholar.org/402f/bb0d3eb259eeabae0522a747de14b7d7f8b5.pdf) International Journal of Advanced Research in Computer Engineering & Technology, Volume 6, Issue 1, Jan 2017. They propose an automated system for detection of sarcasm on Twitter by using features related to sentiment
+  - [AdaRNN](https://pdfs.semanticscholar.org/06e1/22f475a21d92dba137609c40f35690217475.pdf?_ga=2.42961185.588415452.1586000914-824975338.1584017397) Adaptive Recursive Neural Network (AdaRNN) for target-dependent Twitter sentiment classification. It adaptively propagates the sentiments of words to target depending on the context and syntactic relationships between them
+  - [Detecting Sarcasm with Deep Convolutional Neural Networks](https://arxiv.org/abs/1610.08815) [Related Medium Article](https://medium.com/dair-ai/detecting-sarcasm-with-deep-convolutional-neural-networks-4a0657f79e80).It propose to first train a sentiment model (based on a CNN) for learning sentiment-specific feature extraction. The model learns local features in lower layers which are then converted into global features in the higher layers.
+
 <span id='mt'>Machine Translation</span>
 ----
   - [Europarl](http://www.statmt.org/europarl) The Europarl parallel corpus is extracted from the proceedings of the European Parliament. It includes versions in 21 European languages: Romanic (French, Italian, Spanish, Portuguese, Romanian), Germanic (English, Dutch, German, Danish, Swedish), Slavik (Bulgarian, Czech, Polish, Slovak, Slovene), Finni-Ugric (Finnish, Hungarian, Estonian), Baltic (Latvian, Lithuanian), and Greek.
@@ -162,7 +171,6 @@ Table of Contents
   - [Sequence to Sequence Learning with Neural Networks](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf). It uses a multilayered LSTM to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector
   - [The Amazing Power of Word Vectors](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/). Material related to word2vec from different five research papers
   - [Contextual String Embeddings for Sequence Labeling](http://alanakbik.github.io/papers/coling2018.pdf). Properties include that they (a) are trained without any explicit notion of words, and (b) are contextualized by their surrounding text 
-  - [ELMo Word embeddings](allennlp.org/elmo) ELMo is a deep contextualized word representation that models both complex characteristics of word use and how these uses vary across linguistic contexts.
   - [BERT Explained - State of the art language model for NLP](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270). A great explaination of the fundamentals of how BERT works.
   - [Review of BERT based models](https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58). And some recent clues/insights into what makes BERT so effective
 
@@ -262,6 +270,14 @@ Table of Contents
   - [MultiNLI](https://www.nyu.edu/projects/bowman/multinli/) The Multi-Genre Natural Language Inference (MultiNLI) corpus is a crowd-sourced collection of 433k sentence pairs annotated with textual entailment information. The corpus is modeled on the SNLI corpus, but differs in that covers **a range of genres** of spoken and written text, and supports a distinctive cross-genre generalization evaluation.
   - [Scitail](http://data.allenai.org/scitail/) The SciTail dataset is an entailment dataset created from multiple-choice science exams and web sentences. The domain makes this dataset different in nature from previous datasets, and it consists of more factual sentences rather than scene descriptions.
   - [PAWS](https://g.co/dataset/paws) A new dataset with 108,463 well-formed paraphrase and non-paraphrase pairs with high lexical overlap. *PAWS: Paraphrase Adversaries from Word Scrambling*
+
+<span id ="capsule">Capsule Networks</span>
+-----
+  - [Investigating Capsule Networks with Dynamic Routing for Text Classification](https://arxiv.org/pdf/1804.00538.pdf).It show how capsule networks exhibit significant improvement when transfer single-label to multi-label text classification over the competitors
+  - [Attention-Based Capsule Networks with Dynamic Routing for Relation Extraction](http://aclweb.org/anthology/D18-1120). They explore the capsule networks used for relation extraction in a multi-instance multi-label learning framework and propose a novel neural approach based on capsule networks with attention mechanisms
+  - [Identifying Aggression and Toxicity in Comments using Capsule Network](http://aclweb.org/anthology/W18-4412). 2018. It is early days for Capsule Networks, which was introduced by Geoffrey Hinton, et al., in 2017 as an attempt to introduce an NN architecture superior to the classical CNNs. The idea aims to capture hierarchincal relationships in the input layer through dynamic routing between "capsules" of neurons. Due likely to the affinitity of the theme of addressing hierarchical complexities, the idea's extention to the NLP field has since been a sujbect of active research, such as in the papers listed above.
+  - [Dynamic Routing Between Capsules](https://arxiv.org/pdf/1710.09829.pdf).They propose an iterative routing-by-agreement mechanism: A lower-level capsule prefers to send its output to higher level capsules whose activity vectors have a big scalar product with the prediction coming from the lower-level capsule
+  - [Matrix Ccapsules With  Expectation-Maximization Routing](https://openreview.net/pdf?id=HJWLfGWRb). The transformation matrices of capsule net are trained discriminatively by backpropagating through the unrolled iterations of EM between each pair of adjacent capsule layers
 
 <span id="commonsense">Commonsense</span>
 ----
